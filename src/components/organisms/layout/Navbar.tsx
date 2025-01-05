@@ -4,7 +4,7 @@ import Link from "next/link";
 function Navbar() {
   return (
     <>
-      <div className="px-[148px] h-[120px] w-full">
+      <div className="px-[148px] h-[120px] w-full absolute">
         <div className="w-full h-[88px] flex items-center justify-between">
           <Image src="/netflix.svg" alt="netflix" width={148} height={40} />
 
@@ -15,7 +15,7 @@ function Navbar() {
                   src="/translateIcon.svg"
                   width={16}
                   height={16}
-                  alt="arrow icon"
+                  alt="translate icon"
                 />
               </span>
               <select className="appearance-none w-[146px] h-full rounded-[0.25rem] px-[34px] font-medium border-[#767676] border-[1px] bg-transparent font-sans text-[17px]">
