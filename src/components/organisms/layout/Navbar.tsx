@@ -4,7 +4,7 @@ import Link from "next/link";
 function Navbar() {
   return (
     <>
-      <div className="px-[148px] h-[120px] w-full absolute">
+      <div className="px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
         <div className="w-full h-[88px] flex items-center justify-between">
           <Image src="/netflix.svg" alt="netflix" width={148} height={40} />
 
@@ -18,7 +18,7 @@ function Navbar() {
                   alt="translate icon"
                 />
               </span>
-              <select className="appearance-none w-[146px] h-full rounded-[0.25rem] px-[34px] font-medium border-[#767676] border-[1px] bg-transparent font-sans text-[17px]">
+              <select className="appearance-none w-[146px] h-full rounded-[0.25rem] px-[34px] py-[4px] font-medium border-[rgba(128,_128,_128,_0.7)] border-[1px] bg-neutral-900/70 text-base">
                 <option className="text-black">English</option>
                 <option className="text-black">Português</option>
               </select>
@@ -33,7 +33,7 @@ function Navbar() {
             </div>
             <Link
               href={"/sign-in"}
-              className="px-4 py-1 bg-[#E50914] h-full flex items-center rounded-[0.25rem] text-white text-sm font-sans font-bold"
+              className="px-4 py-1 bg-[#E50914] h-full flex items-center rounded-[0.25rem] text-white text-sm font-bold"
             >
               Sign In
             </Link>
