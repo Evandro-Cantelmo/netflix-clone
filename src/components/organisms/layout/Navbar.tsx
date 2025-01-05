@@ -4,8 +4,8 @@ import Link from "next/link";
 function Navbar() {
   return (
     <>
-      <div className="px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
-        <div className="w-full h-[88px] flex items-center justify-between">
+      <div className="lg:px-20 xl:px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
+        <div className="w-full lg:h-20 xl:h-[88px] flex items-center justify-between">
           <Image src="/netflix.svg" alt="netflix" width={148} height={40} />
 
           <div className="h-[38px] flex justify-center items-center gap-3 p-[3px]">
