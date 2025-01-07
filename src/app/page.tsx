@@ -11,7 +11,7 @@ export default function Home() {
             alt="netflix hero"
             className="object-cover"
           />
-          <div className="absolute inset-0 min-[960px]:bg-home-hero-gradient-laptop min-[1280px]:bg-home-hero-gradient md" />
+          <div className="absolute inset-0 bg-home-hero-gradient-mobile min-[600px]:bg-home-hero-gradient-tablet min-[960px]:bg-home-hero-gradient-laptop min-[1280px]:bg-home-hero-gradient-desktop" />
         </div>
         <div className="z-40 absolute h-full w-full pt-[100px]">
           <div className=" w-full -mt-8 flex flex-col justify-center items-center h-[calc(100%-100px)] py-0 p-8">
