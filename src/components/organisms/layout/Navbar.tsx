@@ -4,9 +4,9 @@ import Link from "next/link";
 function Navbar() {
   return (
     <>
-      <div className="lg:px-20 xl:px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
-        <div className="w-full lg:h-20 xl:h-[88px] flex items-center justify-between">
-          <Image src="/netflix.svg" alt="netflix" width={148} height={40} />
+      <div className="px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
+        <div className="w-full h-20 xl:h-[88px] flex items-center justify-between">
+          <Image src="/netflix.svg" alt="netflix" width={148} height={40} className="min-[960px]:w-[148px] w-[89px]" />
 
           <div className="h-[38px] flex justify-center items-center gap-3 p-[3px]">
             <div className="relative h-full">
@@ -18,7 +18,7 @@ function Navbar() {
                   alt="translate icon"
                 />
               </span>
-              <select className="appearance-none w-[146px] h-full rounded-[0.25rem] px-[34px] py-[4px] font-medium border-[rgba(128,_128,_128,_0.7)] border-[1px] bg-neutral-900/70 text-base">
+              <select className="appearance-none w-[62px] min-[600px]:w-[146px] text-transparent min-[600px]:text-white h-full rounded-[0.25rem] min-[600px]:px-[34px] py-[4px] font-medium border-[rgba(128,_128,_128,_0.7)] border-[1px] bg-neutral-900/70 text-base">
                 <option className="text-black">English</option>
                 <option className="text-black">Português</option>
               </select>

@@ -13,7 +13,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-home-hero-gradient-mobile min-[600px]:bg-home-hero-gradient-tablet min-[960px]:bg-home-hero-gradient-laptop xl:bg-home-hero-gradient-desktop" />
         </div>
-        <div className="z-40 absolute h-full w-full pt-[100px]">
+        <div className="z-30 absolute h-full w-full pt-[100px]">
           <div className=" w-full -mt-8 flex flex-col justify-center items-center h-[calc(100%-100px)] py-0 p-8">
             <div className="flex flex-col justify-center items-center  w-full min-[600px]:w-[432px] min-[960px]:w-[508px] xl:w-[588px] space-y-4 min-[960px]:space-y-6 xl:space-y-8 text-white">
               <div className="space-y-2 xl:space-y-4 text-center">
