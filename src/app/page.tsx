@@ -17,7 +17,7 @@ export default function Home() {
           <div className=" w-full -mt-8 flex flex-col justify-center items-center h-[calc(100%-100px)] py-0 p-8">
             <div className="flex flex-col justify-center items-center  w-full min-[600px]:w-[432px] min-[960px]:w-[508px] xl:w-[588px] space-y-4 min-[960px]:space-y-6 xl:space-y-8 text-white">
               <div className="space-y-2 xl:space-y-4 text-center">
-                <h1 className="text-[32px] min-[960px]:text-[40px] xl:text-[3.5rem] leading-tight font-extrabold xl:font-black lg:px-2">
+                <h1 className="text-[32px] min-[960px]:text-[40px] xl:text-[3.5rem] leading-tight font-extrabold xl:font-black ">
                   Unlimited movies, TV shows, and more
                 </h1>
                 <p className="md:text-base xl:text-xl xl:font-semibold">
@@ -25,7 +25,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="space-y-4 w-full text-center">
-                <p className="text-base tracking-tight xl:px-0">
+                <p className="text-base tracking-tight lg:px-2 xl:px-0">
                   Ready to watch? Enter your email to create or restart your
                   membership.
                 </p>
