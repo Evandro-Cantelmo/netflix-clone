@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <>
-      <div className="px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient">
+    <div className="flex justify-center">
+      <div className="px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] h-[120px] w-full absolute z-40 bg-navbar-gradient min-[1920px]:w-[1920px] min-[1920px]:px-[354px]">
         <div className="w-full h-20 xl:h-[88px] flex items-center justify-between">
           <Image src="/netflix.svg" alt="netflix" width={148} height={40} className="min-[960px]:w-[148px] w-[89px]" />
 
@@ -40,7 +40,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Navbar;
