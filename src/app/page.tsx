@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full">
-      <div className="min-[1920px]:place-self-center z-20 min-[1920px]:w-[1920px]">
+    <div className="w-full relative">
+      <div className="absolute  bg-background-hero-gradient bg-center w-full h-full"/>
+      <div className="min-[1920px]:place-self-center z-20 min-[1920px]:w-[1920px] ">
         <div className="relative h-[664px] min-[960px]:h-[760px] xl:h-[98.56vh]">
           <div className="absolute h-full w-full">
             <Image
