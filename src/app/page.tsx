@@ -5,7 +5,7 @@ export default function Home() {
     <div className="w-full relative">
       <div className="absolute  bg-background-hero-gradient bg-center w-full h-full"/>
       <div className="min-[1920px]:place-self-center z-20 min-[1920px]:w-[1920px] ">
-        <div className="relative h-[664px] min-[960px]:h-[760px] xl:h-[98.56vh]">
+        <div className="relative h-[664px] min-[960px]:h-[760px]  [@media(max-height:900px)]:max-xl:h-screen [@media(max-height:900px)]:max-xl:max-h-[888px] xl:h-[888px] min-[1920px]:h-[996px]">
           <div className="absolute h-full w-full">
             <Image
               src="https://i.imgur.com/JouJG45.jpeg"
@@ -13,7 +13,7 @@ export default function Home() {
               alt="netflix hero"
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-home-hero-gradient-mobile min-[600px]:bg-home-hero-gradient-tablet min-[960px]:bg-home-hero-gradient-laptop xl:bg-home-hero-gradient-desktop" />
+            <div className="absolute inset-0 bg-home-hero-gradient-mobile min-[600px]:bg-home-hero-gradient-tablet min-[960px]:bg-home-hero-gradient-laptop xl:bg-home-hero-gradient-desktop min-[1920px]:bg-home-hero-gradient-4k" />
           </div>
           <div className="z-30 absolute h-full w-full pt-[100px]">
             <div className=" w-full -mt-8 flex flex-col justify-center items-center h-[calc(100%-100px)] py-0 p-8">
