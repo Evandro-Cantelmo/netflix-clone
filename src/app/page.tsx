@@ -50,6 +50,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="absolute bottom-0 h-[100px] w-full bg-red-500 rounded-tl-[50%] rounded-tr-[50%]"></div>
         </div>
       </div>
     </div>
