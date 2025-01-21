@@ -19,3 +19,20 @@ body {
   background: var(--background);
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .border-top-left-50-100 {
+    border-top-left-radius: 50% 100%;
+  }
+  .border-top-right-50-100 {
+    border-top-right-radius: 50% 100%;
+  }
+  .bottom-curve-gradient {
+    background: radial-gradient(
+        50% 500% at 50% -420%,
+        rgba(64, 97, 231, 0.4) 80%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      black;
+  }
+}

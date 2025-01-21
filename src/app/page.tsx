@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full relative">
-      <div className="absolute  bg-background-hero-gradient bg-center w-full h-full"/>
+      <div className="absolute  bg-background-hero-gradient bg-center w-full h-full" />
       <div className="min-[1920px]:place-self-center z-20 min-[1920px]:w-[1920px] ">
         <div className="relative h-[664px] min-[960px]:h-[760px]  [@media(max-height:900px)]:max-xl:h-screen [@media(max-height:900px)]:max-xl:max-h-[888px] xl:h-[888px] min-[1920px]:h-[996px]">
           <div className="absolute h-full w-full">
@@ -49,8 +49,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="absolute bottom-0 h-[100px] -left-[15%] w-[130%] bottom-curve-gradient border-top-left-50-100 border-top-right-50-100 before:absolute before:bg-bottom-curve-background before:h-full before:w-full before:-z-10 before:-mt-1 before:rounded-[inherit]"></div>
           </div>
-          <div className="absolute bottom-0 h-[100px] w-full bg-red-500 rounded-tl-[50%] rounded-tr-[50%]"></div>
         </div>
       </div>
     </div>
