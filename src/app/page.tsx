@@ -64,7 +64,7 @@ export default function Home() {
             height={76.8}
             alt="arrow icon"
           />
-          <div className="py-4 px-8 w-full bg-red-500">
+          <div className="py-[14.5px] px-8 rounded-2xl bg-gradient-ad w-full ">
             <p>The Netflix you love for just BRL 20.90.</p>
             <p>Get our most affordable, ad-supported plan.</p>
           </div>

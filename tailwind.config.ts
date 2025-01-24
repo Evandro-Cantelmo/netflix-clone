@@ -29,6 +29,7 @@ export default {
           "radial-gradient(11% 56% at 17% 50%, #461518 0%, transparent 100%),radial-gradient(11% 56% at 83% 50%, #461518 0%, transparent 100%)",
         "bottom-curve-background":
           "linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);",
+        "gradient-ad": "linear-gradient(91deg, #482566 0%, #161d52 99.51%);",
       },
     },
   },
