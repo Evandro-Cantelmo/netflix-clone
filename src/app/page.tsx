@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="w-full relative">
+      <div className="w-full relative z-30">
         {" "}
         <div className="absolute min-[1920px]:bg-background-hero-gradient bg-center w-full h-full" />
         <div className="min-[1920px]:place-self-center z-20 min-[1920px]:w-[1920px] ">
@@ -56,17 +56,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-auto px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] min-[1920px]:px-[354px] z-50 max-w-[120rem] w-full">
-        <div className="flex items-center">
+      <div className="mx-auto px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] min-[1920px]:px-[354px] z-50 max-w-[120rem] w-full -mt-8">
+        <div className="flex items-center z-50 space-x-6">
           <Image
+          className="z-50"
             src="/popcorn.svg"
             width={76.8}
             height={76.8}
             alt="arrow icon"
           />
-          <div className="py-[14.5px] px-8 rounded-2xl bg-gradient-ad w-full ">
-            <p>The Netflix you love for just BRL 20.90.</p>
-            <p>Get our most affordable, ad-supported plan.</p>
+          <div className="z-50 before:rounded-2xl before:bg-gradient-ad before:absolute before:w-full before:h-full relative w-full before:opacity-65 ">
+            <div className="relative py-[14.5px] px-8 ">
+              <p className="text-xl font-bold leading-none">The Netflix you love for just BRL 20.90.</p>
+              <p>Get our most affordable, ad-supported plan.</p>
+            </div>
           </div>
         </div>
       </div>
