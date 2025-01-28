@@ -59,17 +59,20 @@ export default function Home() {
       <div className="mx-auto px-6 min-[600px]:px-8 min-[960px]:px-20 xl:px-[148px] min-[1920px]:px-[354px] z-50 max-w-[120rem] w-full -mt-8">
         <div className="flex items-center z-50 space-x-6">
           <Image
-          className="z-50"
+            className="z-50"
             src="/popcorn.svg"
             width={76.8}
             height={76.8}
             alt="arrow icon"
           />
-          <div className="z-50 before:rounded-2xl before:bg-gradient-ad before:absolute before:w-full before:h-full relative w-full before:opacity-65 ">
-            <div className="relative py-[14.5px] px-8 ">
-              <p className="text-xl font-bold leading-none">The Netflix you love for just BRL 20.90.</p>
-              <p>Get our most affordable, ad-supported plan.</p>
+          <div className="z-50 before:rounded-2xl before:bg-gradient-ad before:absolute before:w-full before:h-full relative w-full before:opacity-65 flex justify-between items-center  flex-wrap">
+            <div className="relative py-[14.5px] px-5">
+              <p className="text-xl font-bold ">
+                The Netflix you love for just BRL 20.90.
+              </p>
+              <p className="font-semibold">Get our most affordable, ad-supported plan.</p>
             </div>
+            <button className="px-4 max-md:mb-[14.5px] mr-8 ml-5 relative h-10 bg-[rgba(128,128,128,0.4)] flex items-center rounded font-bold">Learn More</button>
           </div>
         </div>
       </div>
