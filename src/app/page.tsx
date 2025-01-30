@@ -70,12 +70,18 @@ export default function Home() {
               <p className="text-xl font-bold ">
                 The Netflix you love for just BRL 20.90.
               </p>
-              <p className="font-semibold">Get our most affordable, ad-supported plan.</p>
+              <p className="font-semibold">
+                Get our most affordable, ad-supported plan.
+              </p>
             </div>
-            <button className="px-4 max-[600px]:mb-8 max-md:mb-[14.5px] mr-8 ml-5 relative h-10 bg-[rgba(128,128,128,0.4)] flex items-center rounded font-bold">Learn More</button>
+            <button className="px-4 max-[600px]:mb-8 max-md:mb-[14.5px] mr-8 ml-5 relative h-10 bg-[rgba(128,128,128,0.4)] flex items-center rounded font-bold">
+              Learn More
+            </button>
           </div>
         </div>
-    
+        <div>
+          <h5 className="text-2xl">Trending Now</h5>
+        </div>
       </div>
     </div>
   );
