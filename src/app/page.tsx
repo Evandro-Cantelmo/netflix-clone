@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import NumberedSlider from "../components/molecules/sliders/NumberedSlider";
+
 export default function Home() {
   return (
     <div>
@@ -81,6 +83,18 @@ export default function Home() {
         </div>
         <div>
           <h5 className="text-2xl">Trending Now</h5>
+          <NumberedSlider>
+            {Array.from({ length: 20 }).map((_, index) => (
+              <div
+                className="my-2 mr-4 flex snap-center items-center justify-center last:mr-0 md:snap-start lg:mr-6"
+                key={index}
+              >
+                <div className="bg-red-500 h-[252px] min-w-[180px]">
+                  {index + 1}
+                </div>
+              </div>
+            ))}
+          </NumberedSlider>
         </div>
       </div>
     </div>

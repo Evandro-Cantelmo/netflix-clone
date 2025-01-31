@@ -36,3 +36,45 @@ body {
       black;
   }
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__arrow svg {
+  fill: #ffffff !important;
+}
+.slider__arrow[disabled] {
+  transition: all 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider__arrow--next:not([disabled]) ~ .slider__gradient--next {
+  background: black;
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+.slider__arrow--next[disabled] ~ .slider__gradient--next {
+  background: black;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.slider__arrow--prev:not([disabled]) ~ .slider__gradient--prev {
+  background: black;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.slider__arrow--prev[disabled] ~ .slider__gradient--prev {
+  background: black;
+  transition: all 1s ease;
+  opacity: 0;
+}
