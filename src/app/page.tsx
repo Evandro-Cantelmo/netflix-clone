@@ -89,8 +89,11 @@ export default function Home() {
                 className="my-2 mr-4 flex snap-center items-center justify-center last:mr-0 md:snap-start lg:mr-6"
                 key={index}
               >
-                <div className="bg-red-500 h-[252px] min-w-[180px]">
-                  {index + 1}
+                <div className="bg-red-500 h-[252px] min-w-[180px] rounded-lg relative">
+                  {" "}
+                  <p className="absolute text-[6.25rem] h-[130px] -left-5 bottom-0 z-50">
+                    {index + 1}
+                  </p>
                 </div>
               </div>
             ))}
