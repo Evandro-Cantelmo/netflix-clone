@@ -91,7 +91,7 @@ export default function Home() {
               >
                 <div className="bg-red-500 h-[252px] min-w-[180px] rounded-lg relative">
                   {" "}
-                  <p className="absolute text-[6.25rem] h-[130px] -left-5 bottom-0 z-50">
+                  <p className="absolute text-[6.25rem] h-[130px] -left-5 bottom-0 z-50 text-black font-sans font-bold text-stroke">
                     {index + 1}
                   </p>
                 </div>
