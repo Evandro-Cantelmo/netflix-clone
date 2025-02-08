@@ -86,11 +86,10 @@ export default function Home() {
           <NumberedSlider>
             {Array.from({ length: 20 }).map((_, index) => (
               <div
-                className="my-2 mr-4 flex snap-center items-center justify-center last:mr-0 md:snap-start lg:mr-6"
+                className="my-2 flex snap-center items-center justify-center last:mr-0 md:snap-start lg:px-[22px]"
                 key={index}
               >
                 <div className="bg-red-500 h-[252px] min-w-[180px] rounded-lg relative">
-                  {" "}
                   <p className="absolute text-[6.25rem] h-[130px] -left-5 bottom-0 z-50 text-black font-sans font-bold text-stroke">
                     {index + 1}
                   </p>

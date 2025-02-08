@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -54,32 +55,45 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
         className
       )}
     >
-      <div className="w-full min-[1440px]:w-[1440px] flex relative items-center snap-x snap-mandatory gap-4 max-w-[1200px]">
-        <button
-          disabled={atStart}
-          className="slider__arrow slider__arrow--prev absolute z-40 -translate-x-9 px- py-[14px] hidden md:flex"
-          onClick={() => slide("left")}
-        >
-          left
-        </button>
+      <div className="w-full flex relative items-center snap-x snap-mandatory gap-4 max-w-[1200px]">
+        <div className="slider__gradient--prev absolute left-0 z-30 items-center hidden h-full w-6 md:flex">
 
-        <div className="slider__gradient--prev pointer-events-none absolute left-0 z-30 hidden h-full w-6 md:block" />
+          <button
+            disabled={atStart}
+            className="slider__arrow slider__arrow--prev absolute  -translate-x-9 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-red-500"
+            onClick={() => slide("left")}
+          >
+            <Image
+              src={"./rightArrow.svg"}
+              width={24}
+              height={24}
+              alt="left arrow"
+              className="rotate-180"
+            />
+          </button>
+        </div>
 
         <div
           ref={containerRef}
-          className="flex snap-x snap-mandatory overflow-x-auto no-scrollbar snap-start flex-1 scroll-smooth"
+          className="flex snap-x snap-mandatory overflow-x-auto no-scrollbar z-20 snap-start flex-1 scroll-smooth"
         >
           {children}
         </div>
 
-        <button
-          disabled={atEnd}
-          className="slider__arrow slider__arrow--next absolute translate-x-9 right-0 z-40 hidden md:flex py-[14px] px-5"
-          onClick={() => slide("right")}
-        >
-          right
-        </button>
-        <div className="slider__gradient--next pointer-events-none absolute right-0 z-30 hidden h-full w-6 md:block" />
+        <div className="slider__gradient--next items-center right-0 z-50 hidden h-full w-6 md:flex">
+          <button
+            disabled={atEnd}
+            className="slider__arrow slider__arrow--next absolute right-0 z-40 hidden md:flex items-center rounded-lg h-[120px] bg-red-500"
+            onClick={() => slide("right")}
+          >
+            <Image
+              src={"./rightArrow.svg"}
+              width={24}
+              height={24}
+              alt="right arrow"
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
