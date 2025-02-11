@@ -75,7 +75,7 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
 
         <div
           ref={containerRef}
-          className="flex snap-x snap-mandatory overflow-x-auto no-scrollbar z-20 snap-start flex-1 scroll-smooth"
+          className="flex snap-x snap-mandatory overflow-y-hidden overflow-x-auto no-scrollbar z-20 snap-start flex-1 scroll-smooth"
         >
           {children}
         </div>

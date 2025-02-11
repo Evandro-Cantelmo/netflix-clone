@@ -83,10 +83,10 @@ export default function Home() {
         </div>
         <div>
           <h5 className="text-2xl">Trending Now</h5>
-          <NumberedSlider>
+          <NumberedSlider className="my-2">
             {Array.from({ length: 20 }).map((_, index) => (
               <div
-                className="my-2 flex snap-center items-center justify-center last:mr-0 md:snap-start lg:px-[22px]"
+                className="over flex snap-center items-center justify-center last:mr-0 md:snap-start lg:px-[22px]"
                 key={index}
               >
                 <div className="bg-red-500 h-[252px] min-w-[180px] rounded-lg relative">
@@ -97,6 +97,10 @@ export default function Home() {
               </div>
             ))}
           </NumberedSlider>
+        </div>
+        <div>
+          <h5 className="text-2xl">More Reasons to Join</h5>
+          <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl"></div>
         </div>
       </div>
     </div>
