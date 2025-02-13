@@ -51,16 +51,16 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
   return (
     <div
       className={twMerge(
-        "flex gap-4 w-full flex-col items-center justify-center",
+        "flex gap-4 w-full flex-col items-center justify-center ",
         className
       )}
     >
-      <div className="w-full flex relative items-center snap-x snap-mandatory gap-4 max-w-[1200px]">
-        <div className="slider__gradient--prev absolute left-0 z-30 items-center hidden h-full w-6 md:flex">
+      <div className="w-full flex relative items-center snap-x snap-mandatory gap-4 ">
+        <div className="slider__gradient--prev absolute left-0 z-50 items-center hidden h-full w-6 md:flex">
 
           <button
             disabled={atStart}
-            className="slider__arrow slider__arrow--prev absolute  -translate-x-9 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-red-500"
+            className="slider__arrow slider__arrow--prev left-0 absolute z-40 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-red-500"
             onClick={() => slide("left")}
           >
             <Image
@@ -80,7 +80,7 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
           {children}
         </div>
 
-        <div className="slider__gradient--next items-center right-0 z-50 hidden h-full w-6 md:flex">
+        <div className="slider__gradient--next items-center absolute right-0 z-50 hidden h-full w-6 md:flex">
           <button
             disabled={atEnd}
             className="slider__arrow slider__arrow--next absolute right-0 z-40 hidden md:flex items-center rounded-lg h-[120px] bg-red-500"
