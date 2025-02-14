@@ -59,7 +59,7 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
         <div className="slider__gradient--prev absolute left-0 z-50 items-center hidden h-full w-10 md:flex">
           <button
             disabled={atStart}
-            className="slider__arrow slider__arrow--prev left-0 absolute z-40 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-black"
+            className="slider__arrow slider__arrow--prev left-0 absolute z-40 py-[14px] hidden md:flex items-center h-full w-full bg-black"
             onClick={() => slide("left")}
           >
             <div className="h-[120px] bg-red-500 rounded-lg md:flex items-center ">
