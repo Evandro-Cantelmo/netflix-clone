@@ -56,20 +56,22 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
       )}
     >
       <div className="w-full flex relative items-center snap-x snap-mandatory gap-4 ">
-        <div className="slider__gradient--prev absolute left-0 z-50 items-center hidden h-full w-6 md:flex">
-
+        <div className="slider__gradient--prev absolute left-0 z-50 items-center hidden h-full w-10 md:flex">
           <button
             disabled={atStart}
-            className="slider__arrow slider__arrow--prev left-0 absolute z-40 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-red-500"
+            className="slider__arrow slider__arrow--prev left-0 absolute z-40 rounded-lg py-[14px] hidden md:flex items-center h-[120px] bg-black"
             onClick={() => slide("left")}
           >
-            <Image
-              src={"./rightArrow.svg"}
-              width={24}
-              height={24}
-              alt="left arrow"
-              className="rotate-180"
-            />
+            <div className="h-[120px] bg-red-500 rounded-lg md:flex items-center ">
+              {" "}
+              <Image
+                src={"./rightArrow.svg"}
+                width={24}
+                height={24}
+                alt="left arrow"
+                className="rotate-180"
+              />
+            </div>
           </button>
         </div>
 
@@ -80,18 +82,20 @@ const NumberedSlider: React.FC<CardSliderProps> = ({ className, children }) => {
           {children}
         </div>
 
-        <div className="slider__gradient--next items-center absolute right-0 z-50 hidden h-full w-6 md:flex">
+        <div className="slider__gradient--next items-center absolute right-0 z-50 hidden h-full w-10 md:flex">
           <button
             disabled={atEnd}
-            className="slider__arrow slider__arrow--next absolute right-0 z-40 hidden md:flex items-center rounded-lg h-[120px] bg-red-500"
+            className="slider__arrow slider__arrow--next absolute right-0 z-40 hidden md:flex items-center justify-end  h-full w-full bg-black "
             onClick={() => slide("right")}
           >
-            <Image
-              src={"./rightArrow.svg"}
-              width={24}
-              height={24}
-              alt="right arrow"
-            />
+            <div className="h-[120px] bg-red-500 rounded-lg md:flex items-center ">
+              <Image
+                src={"./rightArrow.svg"}
+                width={24}
+                height={24}
+                alt="right arrow"
+              />
+            </div>
           </button>
         </div>
       </div>
