@@ -86,7 +86,7 @@ export default function Home() {
           <NumberedSlider className="my-2">
             {Array.from({ length: 20 }).map((_, index) => (
               <div
-                className="flex snap-center items-center justify-center last:mr-0 md:snap-start px-[10px] min-[960px]:px-[22px] last:pr-0"
+                className="flex snap-center items-center justify-center last:mr-0 md:snap-start px-[10px] min-[960px]:px-[22px]"
                 key={index}
               >
                 <div className="bg-red-500 min-[960px]:h-[196px] h-[156px] min-[1280px]:h-[252px] min-[960px]:min-w-[140px] min-w-[112px] min-[1280px]:min-w-[180px] rounded-lg relative">
@@ -98,9 +98,65 @@ export default function Home() {
             ))}
           </NumberedSlider>
         </div>
-        <div>
+        <div className="space-y-4">
           <h5 className="text-2xl">More Reasons to Join</h5>
-          <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl"></div>
+          <div className="flex gap-4">
+            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
+              <p className="text-2xl">Enjoy on your TV</p>
+              <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+              <Image
+                className="z-50 absolute bottom-4 right-4 max-[960px]:size-[63.36px]"
+                src="./computer.svg"
+                width={72}
+                height={72}
+                alt="arrow icon"
+              />
+            </div>
+            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
+              <p className="text-2xl">Download your shows to watch offline</p>
+              <p>
+                Save your favorites easily and always have something to watch.
+              </p>
+              <Image
+                className="z-50 absolute bottom-4 right-4 max-[960px]:size-[63.36px]"
+                src="./download.svg"
+                width={72}
+                height={72}
+                alt="arrow icon"
+              />
+            </div>
+            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
+              <p className="text-2xl">Watch everywhere</p>
+              <p>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+              <Image
+                className="z-50 absolute bottom-4 right-4 max-[960px]:size-[63.36px]"
+                src="./telescope.svg"
+                width={72}
+                height={72}
+                alt="arrow icon"
+              />
+            </div>
+            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
+              <p className="text-2xl">Create profiles for kids</p>
+              <p>
+                Send kids on adventures with their favorite characters in a
+                space made just for them — free with your membership.
+              </p>
+              <Image
+                className="z-50 absolute bottom-4 right-4 max-[960px]:size-[63.36px]"
+                src="./kidsProfiles.svg"
+                width={72}
+                height={72}
+                alt="arrow icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
