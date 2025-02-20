@@ -100,9 +100,9 @@ export default function Home() {
         </div>
         <div className="space-y-4">
           <h5 className="text-2xl">More Reasons to Join</h5>
-          <div className="flex gap-4">
-            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
-              <p className="text-2xl">Enjoy on your TV</p>
+          <div className="grid max-[960px]:grid-cols-1 max-[1280px]:grid-cols-2 grid-cols-4 gap-4">
+            <div className="w-full h-[268px] max-[960px]:h-[195px] max-[1280px]:h-[203px] bg-red-500 rounded-2xl relative p-4 space-y-4">
+              <p className="text-2xl tracking-tight">Enjoy on your TV</p>
               <p>
                 Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
                 Blu-ray players, and more.
@@ -115,8 +115,8 @@ export default function Home() {
                 alt="arrow icon"
               />
             </div>
-            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
-              <p className="text-2xl">Download your shows to watch offline</p>
+            <div className="w-full h-[268px] max-[960px]:h-[195px] max-[1280px]:h-[203px] bg-red-500 rounded-2xl relative p-4 space-y-4">
+              <p className="text-2xl tracking-tight">Download your shows to watch offline</p>
               <p>
                 Save your favorites easily and always have something to watch.
               </p>
@@ -128,8 +128,8 @@ export default function Home() {
                 alt="arrow icon"
               />
             </div>
-            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
-              <p className="text-2xl">Watch everywhere</p>
+            <div className="w-full h-[268px] max-[960px]:h-[195px] max-[1280px]:h-[203px] bg-red-500 rounded-2xl relative p-4 space-y-4">
+              <p className="text-2xl tracking-tight">Watch everywhere</p>
               <p>
                 Stream unlimited movies and TV shows on your phone, tablet,
                 laptop, and TV.
@@ -142,8 +142,8 @@ export default function Home() {
                 alt="arrow icon"
               />
             </div>
-            <div className="w-[274px] h-[268px] bg-red-500 rounded-2xl relative ">
-              <p className="text-2xl">Create profiles for kids</p>
+            <div className="w-full h-[268px] max-[960px]:h-[195px] max-[1280px]:h-[203px] bg-red-500 rounded-2xl relative p-4 space-y-4">
+              <p className="text-2xl tracking-tight">Create profiles for kids</p>
               <p>
                 Send kids on adventures with their favorite characters in a
                 space made just for them — free with your membership.
